@@ -1,0 +1,73 @@
+<!doctype html>
+<body>
+<p id="luxhy">Luxhy</p>
+<p id="name"> Username: <input type="text" id="fname" onkeydown="keydownFunction()" onkeyup="keyupFunction()"></p>
+   <p id="pw2">Password: <input type="password" id="pw"></p>
+  <p id="lert"><button onclick="myBTN()">Login</button></p>
+  
+<script>
+  function myBTN() {
+    alert("Dwop a like");
+  }
+  </script>
+
+<script>
+function keydownFunction() {
+document.getElementById("fname").style.backgroundColor = "yellow";
+}
+  
+  function keyupFunction() { document.getElementById("fname").style.backgroundColor = "pink";
+  }
+  </script>
+  
+  <script>
+  function keydownFunction() {
+document.getElementById("fname").style.backgroundColor = "yellow";
+}
+    
+  function keyupFunction() {  document.getElementById("fname").style.backgroundColor = "pink";
+  }
+  
+  </script>
+  
+<button onclick="stopColor()">Stop</button>
+<script>
+var myVar = setInterval(setColor, 300);
+ 
+function setColor() {
+  var x = document.body;
+  x.style.backgroundColor = x.style.backgroundColor == "yellow" ? "pink" : "yellow";
+}
+ 
+function stopColor() {
+  clearInterval(myVar);
+}
+</script>
+
+</body>                                                                          
+-----------------------------------------------------------------------------CSS-----------------------------------------------------------------------------------------
+#ew {
+  text-align: center;
+}
+
+ 
+#name {
+  text-align: center;
+}
+
+#luxhy {
+  text-align: center;
+  color: red;
+}
+
+#lname {
+  text-align: center;
+}
+
+#pw2 {
+  text-align: center;
+}
+
+#lert {
+  text-align: center;
+}
